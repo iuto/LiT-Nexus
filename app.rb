@@ -12,6 +12,7 @@ helpers do
 end
 
 get '/' do
+  @users = User.all
   erb :top
 end
 

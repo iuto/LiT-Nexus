@@ -67,118 +67,24 @@
   
       <div class="container mx-auto mt-10">
         <div class="flex flex-wrap gap-4 justify-center px-4">
-            <!-- 1つ目のカード -->
-            <div class="card-size mb-5 w-full lg:w-1/5 bg-white dark:bg-gray-800 dark:border-gray-700 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center">
-                <img class="w-20 h-20 mb-3 rounded-full shadow-lg" src="https://pbs.twimg.com/profile_images/1317064902058545152/4Ek5UdxK_400x400.jpg" alt="Bonnie image" />
+            <% @users.each do |user| %>
+              <div class="card-size mb-5 w-full lg:w-1/5 bg-white dark:bg-gray-800 dark:border-gray-700 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center">
+              <svg viewBox="0 0 36 36" fill="none" role="img" xmlns="http://www.w3.org/2000/svg" width="80" height="80"><mask id=":r8:" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="#FFFFFF"></rect></mask><g mask="url(#:r8:)"><rect width="36" height="36" fill="#ff005b"></rect><rect x="0" y="0" width="36" height="36" transform="translate(0 0) rotate(324 18 18) scale(1)" fill="#ffb238" rx="36"></rect><g transform="translate(-4 -4) rotate(-4 18 18)"><path d="M15 19c2 1 4 1 6 0" stroke="#000000" fill="none" stroke-linecap="round"></path><rect x="10" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect><rect x="24" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect></g></g></svg>
                 <div class="flex items-center justify-center mb-2">
                     <h5 class="text-xl font-medium text-blue-500 dark:text-white">
-                        <a href="index.html">いうと</a></h5>
+                        <a href="index.html"><%= user.name %></a>
+                    </h5>
                     <img class="w-5 h-5 ml-1" src="https://life-is-tech.com/school/assets/images/common/icon-web.png">
                 </div>
                 <div class="flex items-center justify-center mt-2">
-                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">土曜名古屋</span>
+                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
+                      test
+                    </span>
                 </div>
-            </div>
-            <div class="card-size mb-5 w-full  lg:w-1/5 bg-white dark:bg-gray-800 dark:border-gray-700 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center">
-                <img class="w-20 h-20 mb-3 rounded-full shadow-lg" src="https://pbs.twimg.com/profile_images/1317064902058545152/4Ek5UdxK_400x400.jpg" alt="Bonnie image" />
-                <div class="flex items-center justify-center mb-2">
-                    <h5 class="text-xl font-medium text-blue-500 dark:text-white">
-                        <a href="index.html">いうと</a></h5>
-                    <img class="w-5 h-5 ml-1" src="https://life-is-tech.com/school/assets/images/common/icon-web.png">
-                </div>
-                <div class="flex items-center justify-center mt-2">
-                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">土曜名古屋</span>
-                </div>
-            </div>
-            <div class="card-size mb-5 w-full  lg:w-1/5 bg-white dark:bg-gray-800 dark:border-gray-700 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center">
-                <img class="w-20 h-20 mb-3 rounded-full shadow-lg" src="https://pbs.twimg.com/profile_images/1317064902058545152/4Ek5UdxK_400x400.jpg" alt="Bonnie image" />
-                <div class="flex items-center justify-center mb-2">
-                    <h5 class="text-xl font-medium text-blue-500 dark:text-white">
-                        <a href="index.html">いうと</a></h5>
-                    <img class="w-5 h-5 ml-1" src="https://life-is-tech.com/school/assets/images/common/icon-web.png">
-                </div>
-                <div class="flex items-center justify-center mt-2">
-                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">土曜名古屋</span>
-                </div>
-            </div>
-            <div class="card-size mb-5 w-full  lg:w-1/5 bg-white dark:bg-gray-800 dark:border-gray-700 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center">
-                <img class="w-20 h-20 mb-3 rounded-full shadow-lg" src="https://pbs.twimg.com/profile_images/1317064902058545152/4Ek5UdxK_400x400.jpg" alt="Bonnie image" />
-                <div class="flex items-center justify-center mb-2">
-                    <h5 class="text-xl font-medium text-blue-500 dark:text-white">
-                        <a href="index.html">いうと</a></h5>
-                    <img class="w-5 h-5 ml-1" src="https://life-is-tech.com/school/assets/images/common/icon-web.png">
-                </div>
-                <div class="flex items-center justify-center mt-2">
-                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">土曜名古屋</span>
-                </div>
-            </div>
-            <div class="card-size mb-5 w-full  lg:w-1/5 bg-white dark:bg-gray-800 dark:border-gray-700 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center">
-                <img class="w-20 h-20 mb-3 rounded-full shadow-lg" src="https://pbs.twimg.com/profile_images/1317064902058545152/4Ek5UdxK_400x400.jpg" alt="Bonnie image" />
-                <div class="flex items-center justify-center mb-2">
-                    <h5 class="text-xl font-medium text-blue-500 dark:text-white">
-                        <a href="index.html">いうと</a></h5>
-                    <img class="w-5 h-5 ml-1" src="https://life-is-tech.com/school/assets/images/common/icon-web.png">
-                </div>
-                <div class="flex items-center justify-center mt-2">
-                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">土曜名古屋</span>
-                </div>
-            </div>
-            <div class="card-size mb-5 w-full  lg:w-1/5 bg-white dark:bg-gray-800 dark:border-gray-700 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center">
-                <img class="w-20 h-20 mb-3 rounded-full shadow-lg" src="https://pbs.twimg.com/profile_images/1317064902058545152/4Ek5UdxK_400x400.jpg" alt="Bonnie image" />
-                <div class="flex items-center justify-center mb-2">
-                    <h5 class="text-xl font-medium text-blue-500 dark:text-white">
-                        <a href="index.html">いうと</a></h5>
-                    <img class="w-5 h-5 ml-1" src="https://life-is-tech.com/school/assets/images/common/icon-web.png">
-                </div>
-                <div class="flex items-center justify-center mt-2">
-                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">土曜名古屋</span>
-                </div>
-            </div>
-            <div class="card-size mb-5 w-full  lg:w-1/5 bg-white dark:bg-gray-800 dark:border-gray-700 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center">
-                <img class="w-20 h-20 mb-3 rounded-full shadow-lg" src="https://pbs.twimg.com/profile_images/1317064902058545152/4Ek5UdxK_400x400.jpg" alt="Bonnie image" />
-                <div class="flex items-center justify-center mb-2">
-                    <h5 class="text-xl font-medium text-blue-500 dark:text-white">
-                        <a href="index.html">いうと</a></h5>
-                    <img class="w-5 h-5 ml-1" src="https://life-is-tech.com/school/assets/images/common/icon-web.png">
-                </div>
-                <div class="flex items-center justify-center mt-2">
-                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">土曜名古屋</span>
-                </div>
-            </div>
-            <div class="card-size mb-5 w-full  lg:w-1/5 bg-white dark:bg-gray-800 dark:border-gray-700 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center">
-                <img class="w-20 h-20 mb-3 rounded-full shadow-lg" src="https://pbs.twimg.com/profile_images/1317064902058545152/4Ek5UdxK_400x400.jpg" alt="Bonnie image" />
-                <div class="flex items-center justify-center mb-2">
-                    <h5 class="text-xl font-medium text-blue-500 dark:text-white">
-                        <a href="index.html">いうと</a></h5>
-                    <img class="w-5 h-5 ml-1" src="https://life-is-tech.com/school/assets/images/common/icon-web.png">
-                </div>
-                <div class="flex items-center justify-center mt-2">
-                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">土曜名古屋</span>
-                </div>
-            </div>
-            <div class="card-size mb-5 w-full  lg:w-1/5 bg-white dark:bg-gray-800 dark:border-gray-700 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center">
-                <img class="w-20 h-20 mb-3 rounded-full shadow-lg" src="https://pbs.twimg.com/profile_images/1317064902058545152/4Ek5UdxK_400x400.jpg" alt="Bonnie image" />
-                <div class="flex items-center justify-center mb-2">
-                    <h5 class="text-xl font-medium text-blue-500 dark:text-white">
-                        <a href="index.html">いうと</a></h5>
-                    <img class="w-5 h-5 ml-1" src="https://life-is-tech.com/school/assets/images/common/icon-web.png">
-                </div>
-                <div class="flex items-center justify-center mt-2">
-                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">土曜名古屋</span>
-                </div>
-            </div>
-            <div class="card-size mb-5 w-full  lg:w-1/5 bg-white dark:bg-gray-800 dark:border-gray-700 p-4 rounded-lg shadow-lg flex flex-col justify-center items-center">
-                <img class="w-20 h-20 mb-3 rounded-full shadow-lg" src="https://pbs.twimg.com/profile_images/1317064902058545152/4Ek5UdxK_400x400.jpg" alt="Bonnie image" />
-                <div class="flex items-center justify-center mb-2">
-                    <h5 class="text-xl font-medium text-blue-500 dark:text-white">
-                        <a href="index.html">いうと</a></h5>
-                    <img class="w-5 h-5 ml-1" src="https://life-is-tech.com/school/assets/images/common/icon-web.png">
-                </div>
-                <div class="flex items-center justify-center mt-2">
-                    <span class="bg-gray-100 text-gray-800 text-sm font-medium px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">土曜名古屋</span>
-                </div>
-            </div>
+              </div>
+            <% end %>
         </div>
+    </div>
 
     <h2 class="text-2xl font-bold dark:text-white text-center mt-20">最新の投稿</h2>
     <div class="container mx-auto mt-10 flex justify-center items-center flex-wrap gap-8 md:w-4/5">
