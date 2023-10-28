@@ -16,6 +16,11 @@ get '/' do
   erb :top
 end
 
+get '/users' do
+  @users = User.all
+  erb :user_list
+end
+
 get '/about' do
     erb :about
 end
@@ -41,11 +46,17 @@ get '/login' do
 end
 
 post '/login' do
-    user= User.find_by(mail: params[:mail])
+    user = User.find_by(mail: params[:mail])
     if user && user.authenticate(params[:password])
         session[:user] = user.id
+        session[:notice] = "ログインに成功しました"
+        redirect '/mypage'
+    else
+        session[:alert] = "ログインに失敗しました"
+        redirect '/login'
     end
-    redirect '/index'
+    session.delete(:notice)  # セッション変数をクリア
+    session.delete(:alert)  # セッション変数をクリア
 end
 
 get '/mypage' do

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ユーザーリスト</title>
+</head>
+<body>
+    <h1>登録されているユーザー</h1>
+    <ul>
+        <% @users.each do |user| %>
+            <li>ID: <%= user.id %>, 名前: <%= user.name %>, メール: <%= user.mail %></li>
+        <% end %>
+    </ul>
+</body>
+</html>
